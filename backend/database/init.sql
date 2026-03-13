@@ -41,6 +41,9 @@ USE `corpore`;
 DROP TABLE IF EXISTS `szpaciente`;
 CREATE TABLE `szpaciente` (
   `prontuario` INT NOT NULL AUTO_INCREMENT,
+  `codatendimento` INT DEFAULT NULL,
+  `classificacao` VARCHAR(20) DEFAULT NULL,
+  `cid` VARCHAR(400) DEFAULT NULL,
   `nome` VARCHAR(100) NOT NULL,
   `datanascimento` DATE DEFAULT NULL,
   `sexo` VARCHAR(20) DEFAULT NULL,
@@ -52,5 +55,5 @@ CREATE TABLE `szpaciente` (
 
 -- Dados iniciais corpore
 INSERT INTO `szpaciente` VALUES 
-(1,'Ana Carolina Souza','1990-04-15','F','Solteiro(a)','São Paulo','(11) 98765-4321'),
-(2,'João Pedro Almeida','1985-09-23','M','Casado(a)','Campinas','(19) 99876-5432');
+(1,1,'AMARELO','FK00 - Só quer atestado','Ana Carolina Souza','1990-04-15','F','Solteiro(a)','São Paulo','(11) 98765-4321'),
+(2,3,'VERDE','A203 - Câncer terminal','João Pedro Almeida','1985-09-23','M','Casado(a)','Campinas','(19) 99876-5432');
