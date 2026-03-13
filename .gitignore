@@ -9,7 +9,7 @@ database/Dump/
 database/Limpar/
 database/Backup/
 
-# Ignorar build do React (caso esteja incluindo no repo)
+# Ignorar build do React
 frontend/build/
 
 # Ignorar arquivos de log
