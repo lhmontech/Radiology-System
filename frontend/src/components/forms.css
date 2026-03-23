@@ -1,0 +1,12 @@
+input, 
+select {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  height: 30px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0 4px;
+  margin: 5px;
+}
+
+

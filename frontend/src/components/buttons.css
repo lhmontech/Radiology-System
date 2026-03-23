@@ -1,0 +1,101 @@
+/* Botões de ação */
+.btn-grid {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.btn-grid:hover { background-color: rgba(0, 0, 0, 0.238); }
+.icon-grid { width: 18px; color: #333; }
+
+.register-button{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #4c6ef5;
+    border-radius: 15px;
+    border: none;
+    padding: 2px 15px;
+    margin-top: 5px;
+    width: 120px;
+    height: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover{
+    background-color: #293c88;
+  }
+
+  .clean-button{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #f06969;
+    border-radius: 15px;
+    border: none;
+    padding: 2px 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 120px;
+    height: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .clean-button:hover{
+    background-color: #aa3030;
+  }
+
+  .justify-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-button {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background-color: #4c6ef5;
+  border-radius: 15px;
+  border: none;
+  padding: 5px 15px;
+  margin: 5px 5px 5px 0px;
+  height: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #293c88;
+}
+
+.export-button {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background-color: #4c6ef5;
+  border-radius: 15px;
+  border: none;
+  padding: 5px 15px;
+  margin: 5px 5px 5px 0px;
+  height: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.export-button:hover {
+  cursor: pointer;
+  background-color: #293c88;
+}
+
+.export-button:disabled {
+  color: #e7e7e7;
+  cursor: auto;
+  background-color: #7d7d7e;
+}

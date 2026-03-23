@@ -1,54 +1,53 @@
 import { Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
-import Registro from "./pages/registro";
-import Relatorio from "./pages/relatorio";
-import Historico from "./pages/historico";
+import Record from "./pages/record";
+import Report from "./pages/report";
+import Historic from "./pages/historic";
 import { FolderPen, FolderKanban, FolderSearch, Radiation } from "lucide-react";
 
 function App() {
   const location = useLocation();
-  const currentPath = location.pathname;
+  const activePath = location.pathname; // Used to highlight the current nav link
+
   return (
     <div className="app-container">
+
+      {/* Sidebar navigation with icon links and tooltips */}
       <nav className="navbar">
         <Radiation size={36} className="Logo" />
+
         <div className="tooltip">
-          <Link
-            to="/registro"
-            className={currentPath === "/registro" ? "active-link" : "link"}
-          >
+          <Link to="/record" className={activePath === "/record" ? "active-link" : "link"}>
             <FolderPen />
           </Link>
           <span className="tooltipText">Registro</span>
         </div>
+
         <div className="tooltip">
-          <Link
-            to="/historico"
-            className={currentPath === "/historico" ? "active-link" : "link"}
-          >
+          <Link to="/historic" className={activePath === "/historic" ? "active-link" : "link"}>
             <FolderSearch />
           </Link>
           <span className="tooltipText">Histórico</span>
         </div>
+
         <div className="tooltip">
-          <Link
-            to="/relatorio"
-            className={currentPath === "/relatorio" ? "active-link" : "link"}
-          >
+          <Link to="/report" className={activePath === "/report" ? "active-link" : "link"}>
             <FolderKanban />
           </Link>
           <span className="tooltipText">Relatório</span>
         </div>
       </nav>
-      <div className="FramePrincipal">
+
+      {/* Main content area — renders the active page route */}
+      <div className="PrincipalFrame">
         <Routes>
-          <Route path="/" element={<Navigate to="/registro" />} />
-          <Route path="/registro" element={<Registro />} />
-          <Route path="/historico" element={<Historico />} />
-          <Route path="/relatorio" element={<Relatorio />} />
-          <Route path="*" element={<Registro />} />
-          <Route path="*" element={<Navigate to="/registro" />} />
+          <Route path="/" element={<Navigate to="/record" />} />
+          <Route path="/record" element={<Record />} />
+          <Route path="/historic" element={<Historic />} />
+          <Route path="/report" element={<Report />} />
+          <Route path="*" element={<Navigate to="/record" />} /> {/* Fallback for unknown routes */}
         </Routes>
       </div>
+
     </div>
   );
 }

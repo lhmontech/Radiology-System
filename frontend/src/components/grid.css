@@ -1,0 +1,62 @@
+.page-container {
+  min-width: 1350px;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: var(--grid-layout, repeat(10, 1fr));
+  align-items: center;
+  gap: 5px;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
+/* Force inputs and selects to respect the grid column width */
+.grid-inputs input,
+.grid-inputs select {
+  width: 100% !important;
+  min-width: 0 !important; /* Allows the field to shrink if needed */
+  box-sizing: border-box !important;
+  height: 30px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0 4px;
+  margin: 0 !important;
+}
+
+/* Wrapper for the data rows — adds border and clips overflow */
+.table-body {
+  border: 1px solid #888;
+  border-radius: 4px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+/* Prevent data cells from expanding the column — truncate with ellipsis */
+.grid-data-row div {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Header row styling */
+.grid-header {
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Data row styling */
+.grid-data-row {
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Zebra striping for data rows */
+.grid-data-row:nth-child(odd)  { background-color: #e0e0e0; }
+.grid-data-row:nth-child(even) { background-color: #ffffff; }
+
+.grid-data-row:last-child { border-bottom: none; }
