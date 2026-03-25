@@ -34,13 +34,13 @@ Alé de registrar alguns dados pessoais dos pacientes, também é registrado qua
 
 ## 📥 Download
 
-Você pode baixar a versão mais recente do sistema no link abaixo:
-👉 [Baixar o instalador (Windows)](/lhmontech/Radiology-System/releases/download/v1.0.0/RX_installer_v1.exe)
+Você pode baixar a versão mais recente do sistema no link abaixo:<br>
+👉 [Baixar o instalador (Windows)](https://github.com//lhmontech/Radiology-System/releases/download/v1.0.0/RX_installer_v1.exe)
 
 ## Telas
-![Tela principal](/frontend/public/images/Tela-principal.jpg)
-![Tela histórico](/frontend/public/images/Tela-historico.jpg)
-![Tela relatório](/frontend/public/images/Tela-relatorio.jpg)
+![Tela principal](/frontend/public/images/record-screen.jpg)
+![Tela histórico](/frontend/public/images/historic-screen.jpg)
+![Tela relatório](/frontend/public/images/report-screen.jpg)
 
 ## 🛠️ Desenvolvido por
 
