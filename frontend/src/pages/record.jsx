@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 const Record = () => {
   const today = new Date();
-  const todayDate = today.toLocaleDateString('pt-BR');
+  const todayDate = today.toISOString().split('T')[0];
 
   // Grid column layout for the register table
   const layoutRegister = `    
@@ -38,7 +38,7 @@ const Record = () => {
     classificacao: '',
     cid: '',
     exame: '',
-    qtdincidencias: '',
+    qtdincidencias: '1',
     origem: '',
     reexposicao: defaultReexposure,
     motivo: '',
