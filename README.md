@@ -19,10 +19,10 @@ Alé de registrar alguns dados pessoais dos pacientes, também é registrado qua
 - ✅ **Cadastro de atendimentos** com dados do exame e do paciente
 - 🕒 **Listagem dos 20 registros mais recentes** com opção de editar ou excluir
 - 🔍 **Histórico de atendimentos** com busca filtrada por data
-- 📊 **Relatórios avançados** para supervisores, com filtros por:
+- 📊 **Relatórios avançados** para supervisores, com cards de indicadores e filtros por:
   - Data
   - Origem do paciente
-  - Faixa etária (amostragem)
+  - Sexo do paciente
   - Tipo de exame
   - Entre outros
 
@@ -32,73 +32,10 @@ Alé de registrar alguns dados pessoais dos pacientes, também é registrado qua
 - **Backend**: Node.js, Express
 - **Banco de Dados**: MySQL
 
-## 📝 Manual do sistema
-<a href="Manual-API-Raiox.pdf"><img width="50" alt="image" src="https://github.com/user-attachments/assets/75c8261e-db12-48b2-bee5-f05255820bdb" /></a>
+## 📥 Download
 
-## 🚀 Como executar o projeto
-
-### 1. ⚙️ Pré-requisitos para preparar o ambiente
-Antes de rodar o projeto, você precisa ter instalado:
-- [![Node.js](https://img.shields.io/badge/Node.js(18+)-009929?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-- [![MySQL Server](https://img.shields.io/badge/MySQL_Server(8+)-63DEFD?style=for-the-badge&logo=MySQL&logoColor=black)](https://dev.mysql.com/downloads/mysql/)
-
-### 2. Clonar o repositório e acessar a pasta
-```bash
-git clone https://github.com/lhmontech/RX-system.git
-```
-```bash
-cd Caminho/da/pasta/Rx-system
-```
-
-### 3. Instalar dependências
-**No backend:**
-```bash
-cd Rx-system/backend
-```
-```bash
-npm install
-```
-
-**No Frontend:**
-```bash
-cd Rx-system/frontend
-```
-```bash
-npm install
-```
-
-### 4. Configurar váriaveis do ambiente
-Crie um arquivo .env dentro da pasta backend/ com os dados do seu banco MySQL no seguinte padrão:
-```md
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=seu_usuario
-DB_PASSWORD=sua_senha
-DB_DATABASE=bdraiox
-```
-
-### 5. Criar banco de dados
-No backend, rode o script para inicializar o banco:
-```bash
-npm run db:init
-```
-> Esse comando cria o banco, tabelas e insere alguns dados de exemplo.
-
-### 6. Rodar o backend
-```bash
-cd Rx-system/backend
-```
-```bash
-node server.js
-```
-
-### 7. Rodar o frontend
-```bash
-cd Rx-system/frontend
-```
-```bash
-npm start
-```
+Você pode baixar a versão mais recente do sistema no link abaixo:
+👉 [Baixar o instalador (Windows)](/lhmontech/Radiology-System/releases/download/v1.0.0/RX_installer_v1.exe)
 
 ## Telas
 ![Tela principal](/frontend/public/images/Tela-principal.jpg)
