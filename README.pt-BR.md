@@ -1,3 +1,7 @@
+🌎 Idioma:
+- 🇺🇸 [Inglês](README.md)
+- 🇧🇷 [Português](README.pt-BR.md)
+
 <p align="center">
       <img src="frontend\public\images\x-ray.png" alt="logo raio-x" width="200">
       <h2 align="center">Registros Raio-x</h2>
