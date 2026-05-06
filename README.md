@@ -44,9 +44,7 @@ You can download the latest version of the system using the link below:<br>
 
 ## Screens
 
-![Main screen](/frontend/public/images/record-screen.jpg)
-![History screen](/frontend/public/images/historic-screen.jpg)
-![Report screen](/frontend/public/images/report-screen.jpg)
+https://github.com/user-attachments/assets/8bedbb2b-ae9b-42f1-88d2-dc91c2059fd9
 
 ## 🛠️ Developed by
 
